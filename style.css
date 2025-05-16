@@ -1,0 +1,418 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #fff;
+  color: #111;
+  line-height: 1.5;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.hero {
+  background: url('../img/fondoprincipal.jpeg') no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  padding: 2rem;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.menu-icon {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 30px;
+}
+
+.hero-left {
+  width: 40%;
+  margin-top: 100px;
+}
+
+.hero-left h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+.btn-comprar {
+  margin-top: 1.5rem;
+  display: inline-block;
+  background: #ff9f1c;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.hero-right {
+  width: 50%;
+  text-align: right;
+  margin-top: 40px;
+}
+
+.hero-right .festival {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.hero-right .titulo {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.hero-right .ciudad {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.contador {
+  margin-top: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+
+.contador div {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.contador span {
+  font-size: 1.5rem;
+  font-weight: bold;
+  display: block;
+}
+
+.fecha-evento {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.fecha-evento span {
+  color: #ffd60a;
+}
+
+.fecha-evento small {
+  display: block;
+  margin-top: 0.3rem;
+}
+
+
+.lineup {
+  background: #b94000;
+  color: #fff;
+  padding: 3rem 1rem;
+}
+
+.lineup h2 {
+  color: yellow;
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  text-align: left;
+  padding-left: 1rem;
+}
+
+.artistas {
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto;
+  padding: 0 1rem;
+  scroll-snap-type: x mandatory;
+}
+
+.artista {
+  flex: 0 0 auto;
+  width: 240px;
+  background: #a33b00;
+  border-radius: 20px;
+  scroll-snap-align: start;
+  text-align: center;
+  padding: 1rem;
+}
+
+.artista img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 0.5rem;
+}
+
+.artista p {
+  font-weight: bold;
+  color: yellow;
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+}
+
+.ver-cartel {
+  text-align: right;
+  margin-top: 1rem;
+  padding-right: 1.5rem;
+}
+
+.ver-cartel a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+.viaje {
+  background: #ffb000;
+  text-align: center;
+  padding: 2rem 1rem;
+  color: #111;
+}
+
+.viaje h2 {
+  color: #2e1a47;
+  margin-bottom: 1rem;
+}
+
+.viaje-items {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.viaje-items div {
+  background: orange;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 120px;
+}
+
+/* GALERÍA (corregida) */
+.galeria {
+  background: none;
+  padding: 2rem 1rem;
+  color: #000;
+  text-align: center;
+}
+
+.galeria h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #b94000;
+}
+
+.galeria-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1rem;
+}
+
+.galeria-grid img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* NOTICIAS */
+.noticias {
+  background: #2e1a47;
+  color: #fff;
+  padding: 2rem 1rem;
+}
+
+.noticias h2 {
+  color: yellow;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.noticias ul {
+  list-style: none;
+}
+
+.noticias li {
+  margin-bottom: 0.5rem;
+}
+
+.noticias span {
+  font-weight: bold;
+  color: white;
+}
+
+/* COMPRA YA */
+.comprar {
+  background: #ffb000;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+.comprar h2 {
+  font-size: 2rem;
+  color: #861f1f;
+  margin-bottom: 1.5rem;
+}
+
+.comprar-opciones {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.comprar-opciones div {
+  background: orange;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 200px;
+  text-align: center;
+}
+
+.comprar-opciones h3 {
+  color: white;
+  font-size: 1.2rem;
+}
+
+.comprar-opciones p {
+  margin-top: 0.5rem;
+}
+
+/* FINAL */
+.final {
+  background: #b94000;
+  color: white;
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.col {
+  flex: 1;
+  min-width: 250px;
+}
+
+.formulario input,
+.formulario textarea {
+  display: block;
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.5rem 0;
+  border: none;
+  border-radius: 5px;
+}
+
+.formulario button {
+  background: #ffb000;
+  border: none;
+  color: #111;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.iconos {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.iconos img {
+  width: 30px;
+}
+
+
+@media (max-width: 1024px) {
+  .hero-left,
+  .hero-right {
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .hero {
+    height: auto;
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+  }
+
+  .contador {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .lineup h2 {
+    text-align: center;
+    padding-left: 0;
+  }
+
+  .comprar-opciones,
+  .viaje-items,
+  .artistas {
+    justify-content: center;
+  }
+
+  .final {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-left h2 {
+    font-size: 1.8rem;
+  }
+
+  .btn-comprar {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+
+  .artistas {
+    gap: 1rem;
+  }
+
+  .artista {
+    width: 180px;
+  }
+
+  .viaje-items div {
+    width: 100px;
+    padding: 0.8rem;
+  }
+
+  .galeria-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .final {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .col {
+    min-width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .comprar-opciones div {
+    width: 100%;
+  }
+}
+
+
+
